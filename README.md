@@ -21,7 +21,7 @@ Database: Prisma
 sh
 Copy
 Edit
-git clone https://github.com/your-username/BlogSphere.git
+git clone https://github.com/KishanTiwari96/BlogSphere.git
 cd BlogSphere
 2️⃣ Install dependencies
 sh
