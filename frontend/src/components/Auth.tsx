@@ -53,7 +53,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
 
     return <div className="h-screen flex justify-center items-center flex-col">
         <div className="flex flex-col ">
-            <div className="text-4xl font-bold">
+            <div className="text-3xl md:text-4xl font-bold">
                 {type == "signup" ? "Create an account":"Enter your details"}
             </div>
             <div className="flex pt-3">

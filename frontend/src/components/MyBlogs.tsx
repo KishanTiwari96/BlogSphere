@@ -42,7 +42,7 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
     }
     return <div>
         <div className="relative flex justify-center cursor-pointer">
-            <div className="flex-col justify-center w-11/12 max-w-5xl">
+            <div className="flex-col justify-center w-4/5 md:w-11/12 max-w-5xl">
             <div className="flex justify-between items-center ">
                 <div className="flex pt-4">
                     <Avatar name={authorName}/>    

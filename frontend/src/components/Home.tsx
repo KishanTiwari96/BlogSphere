@@ -15,21 +15,21 @@ export const Home = () => {
     }
     return <div className="bg-gray-200 min-h-screen">
         <div className="border-b flex justify-between px-4 py-3  ">
-            <div className="ml-2 mt-2 text-2xl font-serif font-bold text-black">
-                <Link to={"/"} className=" cursor-pointer text-4xl font-bold text-gray-800 hover:text-gray-600">
+            <div className="ml-2 mt-2 font-serif font-bold text-black">
+                <Link to={"/"} className=" cursor-pointer text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600">
                     BlogSphere
                 </Link>
             </div>
             <button onClick={Start} type="button" className="cursor-pointer text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Get Started</button>
        
         </div>
-        <div className="text-8xl font-serif font-bold leading-tight text-black ml-15 mt-4 max-w-4xl">
+        <div className="text-6xl md:text-8xl font-serif font-bold leading-tight text-black ml-12 md:ml-15 mt-15 md:mt-4 max-w-4xl">
             Where Words Meet Innovation
         </div>
-        <div className="text-2xl font-sans text-gray-700 ml-15 mt-4">
+        <div className="text-2xl font-sans text-gray-700 ml-12 md:ml-15 mt-4">
             Your Hub for Knowledge & Creativity
         </div>
-        <button onClick={Start} type="button" className="cursor-pointer text-xl text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full ml-15 mt-8 px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Start reading</button>
+        <button onClick={Start} type="button" className="cursor-pointer text-xl text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full ml-12 md:ml-15 mt-12 md:mt-8 px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Start reading</button>
         
     </div>
 }    

@@ -53,7 +53,7 @@ function TextEditor ({onChange} :{onChange : (e:ChangeEvent<HTMLTextAreaElement>
             
        <div className="px-4 py-2 bg-white rounded-b-lg">
            <label className="sr-only">Publish post</label>
-           <textarea onChange={onChange} id="editor" rows={8} className="focus:outline-none block w-2xl px-0 text-sm text-gray-800 bg-white border-0 focus:ring-0 " placeholder="Write an article..."  ></textarea>
+           <textarea onChange={onChange} id="editor" rows={8} className="focus:outline-none block w-xs md:w-2xl px-0 text-sm text-gray-800 bg-white border-0 focus:ring-0 " placeholder="Write an article..."  ></textarea>
        </div>
    </div>
    

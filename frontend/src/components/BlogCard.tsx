@@ -10,7 +10,7 @@ interface BlogCardInput {
 export const BlogCard = ({authorName, title, content, publishedDate, id}:BlogCardInput) => {
     return <Link to = {`/blog/${id}`}>
         <div className="flex justify-center cursor-pointer">
-            <div className="flex-col justify-center w-11/12 max-w-5xl">
+            <div className="flex-col justify-center w-4/5 md:w-11/12 max-w-5xl">
                 <div className="flex pt-4">
                     <Avatar name={authorName}/>    
                     <div className="font-medium pl-2">{authorName} ,</div>
