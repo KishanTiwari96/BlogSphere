@@ -13,7 +13,7 @@ export const FullBlog = ({blog} : {blog : Blog}) => {
                 <div className="font-thin pt-3">
                     {new Date(blog.createdAt).toLocaleDateString('en-GB')}
                 </div>
-                <div className="text-2xl font-normal pt-4 break-words whitespace-pre-line">
+                <div className="text-lg md:text-2xl font-normal pt-4 break-words whitespace-pre-line">
                     {blog.content}                    
                 </div>
             </div>
