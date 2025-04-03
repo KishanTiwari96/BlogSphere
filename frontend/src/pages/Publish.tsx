@@ -46,7 +46,7 @@ export const Publish = () => {
     </div>
 }
 
-export function TextEditor ({onChange} :{onChange : (e:ChangeEvent<HTMLTextAreaElement>) => void}) {
+function TextEditor ({onChange} :{onChange : (e:ChangeEvent<HTMLTextAreaElement>) => void}) {
     return <form>
    <div className="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 ">
        <div className="flex items-center justify-center px-3 py-2 ">
