@@ -6,5 +6,11 @@
   "vars": {
     "DATABASE_URL" : "",
     "JWT_SECRET" : ""
-  }
+  },
+    "observability": {
+      "logs": {
+        "enabled": true
+      }
+    }
+  
 }
