@@ -3,6 +3,7 @@ import { Avatar } from "./BlogCard";
 import { MouseEvent, useState } from "react";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
+import { EditBlog } from "./EditBlog";
 
 interface MyBlogCardInput {
     authorName : string;
@@ -33,13 +34,6 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
             })
         }
     }  
-
-    const EditBlog = () => {
-        const token = localStorage.getItem("token");
-        if(token){
-            axios.put(`${BACKEND_URL}/api/v1/blog/${id}`)
-        }
-    }
     return <div>
         <div className="relative flex justify-center cursor-pointer">
             <div className="flex-col justify-center w-4/5 md:w-11/12 max-w-5xl">
@@ -55,7 +49,7 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
             </div>
                 {ShowCard && (
                     <div className="absolute right-0 w-24 rounded-sm border bg-gray-100">
-                    <button onClick={EditBlog} className="block w-full text-left p-2 hover:bg-gray-300">
+                    <button onClick={() => <EditBlog blogId={id} />} className="block w-full text-left p-2 hover:bg-gray-300">
                         Edit
                     </button>
                     <button onClick={Delete} className="block w-full text-left p-2 hover:bg-gray-300">
