@@ -58,7 +58,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             </div>
             <div className="flex pt-3">
                 <div className="pl-3">
-                    {type == "signup" ? "Already have an account?" : "Dont't have an account?"}
+                    {type == "signup" ? "Already have an account?" : "Don't have an account?"}
                     <Link to={type == "signup" ? "/signin" : '/signup'} className="underline pl-1">{type == "signup" ? "Login" : "Signup"}</Link>
                 </div>
             </div>
