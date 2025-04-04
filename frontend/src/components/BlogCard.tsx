@@ -1,3 +1,4 @@
+import { BookOpenIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 interface BlogCardInput {
@@ -22,8 +23,9 @@ export const BlogCard = ({authorName, title, content, publishedDate, id}:BlogCar
                 <div className="font-extralight break-words pt-1">
                     {content.slice(0,100) + "..."}
                 </div>
-                <div className="pt-5 font-thin">
-                    {`${Math.ceil(content.length/100)} min read`}
+                <div className="flex pt-5 font-thin">
+                    <BookOpenIcon className="h-5 w-5 text-gray-500 mt-1 mr-1" />
+                    {`${Math.ceil(content.length/400)} min read`}
                 </div>
                 <div className="border border-gray-200  max-w-3xl">
                 </div>

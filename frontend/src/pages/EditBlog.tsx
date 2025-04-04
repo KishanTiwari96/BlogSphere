@@ -50,8 +50,9 @@ import axios from "axios"
                                  return;
                              }
                              await axios.put(`${BACKEND_URL}/api/v1/blog/update/${blogId}`,{
-                                 title,
-                                 content
+                                id,
+                                title,
+                                content
                              },{
                                  headers: {
                                      Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -59,9 +60,9 @@ import axios from "axios"
                              });
                              alert("Blog updated successfully!");
                              navigate("/my-blogs", {replace:true})
-                         }catch(e){
-                             alert("Error while updating blog post")
-                         }
+                         }catch (error) {
+                            console.error("Error:", (error as any).response?.data || (error as any).message);
+                          }
  
                          }} type="submit" className=" inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-800">
                          Save and update
