@@ -64,11 +64,14 @@ blogRouter.put('/update/:id', async(c) => {
     const body = await c.req.json();
 
     const id = c.req.param("id");
-    const { success } = updateBlogInput.safeParse(body);
-    if(!success){
-    c.status(411);
+    const parsed= updateBlogInput.safeParse(body);
+    console.log("🟡 Received body:", body);
+    console.log("🔴 Validation result:", parsed);
+    if(!parsed.success){
+    c.status(400);
     return c.json({
-        message : "Inputs are incorrect"
+        message : "Inputs are incorrect",
+        errors: parsed.error.errors
     })
     }
 
@@ -93,7 +96,7 @@ blogRouter.put('/update/:id', async(c) => {
             content: blog.content,
         })
     }catch(e){
-        c.status(411)
+        c.status(500)
         return c.json({
             message : "Error while updating blog post"
         })

@@ -7,6 +7,7 @@ import './App.css'
 import { Publish } from "./pages/Publish"
 import { Home } from "./components/Home"
 import { MyBlogs } from "./pages/MyBlogs"
+import { EditBlog } from "./pages/EditBlog"
 
 function App() {  
 
@@ -21,6 +22,7 @@ function App() {
           <Route path = "/blog/:id" element = {<Blog />}></Route>
           <Route path="/publish" element= {<Publish />}></Route>
           <Route path="/my-blogs" element = {<MyBlogs />}></Route>
+          <Route path="/editblog/:id" element = {<EditBlog />}></Route>
         </Routes>
       </BrowserRouter>
     </>
