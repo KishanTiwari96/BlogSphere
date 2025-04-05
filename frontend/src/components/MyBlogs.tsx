@@ -44,7 +44,7 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
                     <div className="font-extralight pl-2">{publishedDate}</div>
                 </div>
                 <div className="relative">
-                    <button onClick={handleOptionsClick} className="text-lg font-medium text-gray-900 dark:text-white">...</button>
+                    <button onClick={handleOptionsClick} className="text-lg font-medium dark:text-white">...</button>
                 </div>
             </div>
                 {ShowCard && (
