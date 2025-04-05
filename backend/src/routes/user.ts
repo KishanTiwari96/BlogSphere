@@ -4,10 +4,10 @@ import { withAccelerate } from '@prisma/extension-accelerate'
 import { sign,verify } from 'hono/jwt'
 import { signinInput,signupInput } from "@kishantiwari/common";
 export const userRouter = new Hono<{
-    Bindings : {  // specifying the type of env variable
-        DATABASE_URL : string,
-        JWT_SECRET : string
-    }
+  Bindings : {  // specifying the type of env variable
+      DATABASE_URL : string,
+      JWT_SECRET : string
+  }
 }>()
 
 userRouter.post('/signup', async(c) => {
@@ -53,7 +53,7 @@ userRouter.post('/signup', async(c) => {
       }
     })
 
-    const token = await sign({id:user.id},c.env.JWT_SECRET)
+    const token = await sign({id:user.id, exp: Math.floor(Date.now() / 1000) + (60 * 60)},c.env.JWT_SECRET)
     return c.json({
       name : user.name,
       token : token
@@ -109,7 +109,7 @@ userRouter.post('/signin', async(c) => {
         error : "User not found"
       })
     }
-    const token = await sign({id : user.id},c.env.JWT_SECRET)
+    const token = await sign({id : user.id, exp: Math.floor(Date.now() / 1000) + (60 * 60)},c.env.JWT_SECRET)
     return c.json({
       name : user.name,
       token : token
