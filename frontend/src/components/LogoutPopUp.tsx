@@ -14,11 +14,11 @@ export const LogoutPopUp = ({ isOpen, onCancel, onConfirm }: LogoutPopUpProps) =
     >
       <div
         className={`fixed inset-0  bg-opacity-50 backdrop-blur-sm`}
-        style={{ zIndex: -1 }} // Place the blur background behind the modal
+        style={{ zIndex: -1 }} 
       ></div>
       
       <div className="bg-white rounded-lg p-6 shadow-lg max-w-sm w-full">
-        <h3 className="text-xl font-semibold mb-4">Are you sure you want to logout?</h3>
+        <h3 className="text-xl font-semibold mb-4 text-black">Are you sure you want to logout?</h3>
         <div className="flex justify-between">
           <button
             onClick={onCancel}

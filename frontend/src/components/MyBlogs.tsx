@@ -48,7 +48,7 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
                 </div>
             </div>
                 {ShowCard && (
-                    <div className="absolute right-0 w-24 rounded-sm border bg-gray-100">
+                    <div className="absolute right-0 w-24 text-black rounded-sm border bg-gray-100">
                         <Link to={`/editblog/${id}`} className="block w-full text-left p-2 hover:bg-gray-300">
                             Edit
                         </Link>
@@ -65,7 +65,7 @@ export const MyBlogCard = ({authorName, title, content, publishedDate, id}:MyBlo
                             {content.slice(0,100) + "..."}
                         </div>
                         <div className="pt-5 font-thin">
-                            {`${Math.ceil(content.length/100)} min read`}
+                            {`${Math.ceil(content.length/400)} min read`}
                         </div>
                         <div className="border border-gray-200  max-w-3xl">
                         </div>

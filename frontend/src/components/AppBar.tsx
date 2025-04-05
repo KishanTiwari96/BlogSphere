@@ -4,14 +4,14 @@ import { Sidebar } from "./Sidebar"
 
 export const AppBar = () => {
     const name = localStorage.getItem("Person") || "Anonymous"
-    return <div className="border-b flex justify-between px-4 py-3">
+    return <div className=" top-0 left-0 right-0 z-50 border-b flex justify-between px-4 py-3">
         <div className="flex">
             <div className="mt-0.5" style={{ zIndex: 9999 }}>
                 <Sidebar></Sidebar>
             </div>
             
-            <div className="ml-2 font-serif font-bold text-black mt-1 md:mt-0">
-                <Link to={"/blogs"} className="text-3xl md:text-4xl cursor-pointer font-bold text-gray-800 hover:text-gray-600 ">
+            <div className="ml-2 font-serif font-bold dark:text-white mt-1 md:mt-0">
+                <Link to={"/blogs"} className="text-3xl md:text-4xl cursor-pointer font-bold  ">
                     BlogSphere
                 </Link>
             </div>

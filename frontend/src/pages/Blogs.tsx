@@ -7,9 +7,9 @@ export const Blogs = () => {
     const {loading,blogs} = useBlogs();
     
     if(loading){
-        return <div>
+        return <div >
             <AppBar></AppBar>
-            <div>
+            <div >
                 <BlogSkeleton></BlogSkeleton>
                 <BlogSkeleton></BlogSkeleton>
                 <BlogSkeleton></BlogSkeleton>
@@ -22,7 +22,7 @@ export const Blogs = () => {
     return <div>
         <AppBar></AppBar>
         <div className="flex justify-center">
-            <div className=" w-md">
+            <div className="w-full max-w-md">
                 {blogs.map( blog => <BlogCard 
                     id = {blog.id}  
                     authorName={blog.author.name || "Anonymous" } 

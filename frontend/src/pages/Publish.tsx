@@ -51,12 +51,12 @@ export const Publish = () => {
 
 export function TextEditor ({onChange,value} :{onChange : (e:ChangeEvent<HTMLTextAreaElement>) => void,value : string}) {
     return <form>
-   <div className="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 ">
+   <div className="w-full mb-4 rounded-lg  ">
        <div className="flex items-center justify-center px-3 py-2 ">
             
-       <div className="px-4 py-2 bg-white rounded-b-lg">
+       <div className="px-4 py-2 bg-white border border-gray-300 rounded-md">
            <label className="sr-only">Publish post</label>
-           <textarea onChange={onChange} value={value} id="editor" rows={8} className="focus:outline-none block w-xs md:w-2xl px-0 text-sm text-gray-800 bg-white border-0 focus:ring-0 " placeholder="Write an article..."  ></textarea>
+           <textarea onChange={onChange} value={value} id="editor" rows={8} className="focus:outline-none w-xs md:w-2xl px-0 text-sm text-gray-800  focus:ring-0 " placeholder="Write an article..."  ></textarea>
        </div>
    </div>
    

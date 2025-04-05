@@ -5,7 +5,7 @@ import { Avatar } from "./BlogCard"
 export const FullBlog = ({blog} : {blog : Blog}) => {
     return <div>
         <AppBar></AppBar>
-        <div className="grid grid-cols-12 pt-8">
+        <div className="grid grid-cols-12 pt-8 ">
             <div className="col-span-9 pl-5 md:pl-15">
                 <div className="text-3xl md:text-5xl font-bold">
                     {blog.title}

@@ -13,7 +13,8 @@ export const Home = () => {
         }
         
     }
-    return <div className="bg-gray-200 min-h-screen">
+    return <div className=" min-h-screen">
+        <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="border-b flex justify-between px-4 py-3  ">
             <div className="ml-2 mt-2 font-serif font-bold text-black">
                 <Link to={"/"} className=" cursor-pointer text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600">
