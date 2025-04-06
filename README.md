@@ -18,13 +18,11 @@ Database: Prisma
 
 🏗 Installation & Setup
 1️⃣ Clone the repository
-sh
 Copy
 Edit
 git clone https://github.com/KishanTiwari96/BlogSphere.git
 cd BlogSphere
 2️⃣ Install dependencies
-sh
 Copy
 Edit
 npm install
@@ -32,7 +30,6 @@ npm install
 Create a .env file and add your Cloudflare, Prisma, and JWT credentials.
 
 4️⃣ Start the development server
-sh
 Copy
 Edit
 npm run dev
@@ -42,8 +39,6 @@ Your app should now be running locally! 🎉
 🚀 Comments on blogs
 🚀 Like and share functionality
 🚀 Rich text editor for better blog formatting
-
-Let me know if you want any modifications! 🚀
 
 
 
