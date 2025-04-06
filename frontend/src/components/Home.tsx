@@ -34,7 +34,7 @@ export const Home = () => {
             Your Hub for Knowledge & Creativity
         </div>
         <button onClick={Start} type="button" className="cursor-pointer text-xl text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full ml-12 md:ml-15 mt-12 md:mt-8 px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Start reading</button>
-        <div className="border-t mt-18 flex justify-center px-3 py-3">
+        <div className="border-t mt-85 md:mt-18 flex justify-center px-3 py-3">
             <div className="ml-2 mr-2 text-gray-500">Help</div>
             <div className="ml-2 mr-2 text-gray-500">About</div>
             <div className="ml-2 mr-2 text-gray-500">Careers</div>
